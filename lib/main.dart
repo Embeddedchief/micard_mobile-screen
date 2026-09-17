@@ -13,15 +13,33 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: const Color.fromARGB(255, 0, 10, 15),
+        backgroundColor: const Color.fromARGB(255, 247, 249, 249),
         body: Center(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              CircleAvatar(
-                radius: 50.0,
-                backgroundImage: AssetImage('assets/images/profile.png'),
+              Container(
+                height: 300,
+                width: double.infinity,
+                decoration: BoxDecoration(
+                  color: const Color.fromARGB(255, 3, 1, 1),
+                ),
+              ),
+              Container(
+                width: 150,
+                height: 150,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  border: Border.all(
+                    color: const Color.fromARGB(255, 250, 249, 248),
+                    width: 4.0,
+                  ),
+                ),
+                child: CircleAvatar(
+                  radius: 50.0,
+                  backgroundImage: AssetImage('assets/images/profile.png'),
+                ),
               ),
 
               SizedBox(height: 10),
@@ -31,7 +49,7 @@ class MyApp extends StatelessWidget {
                 style: TextStyle(
                   fontFamily: 'Pacifico',
                   fontSize: 20.0,
-                  color: Colors.white,
+                  color: const Color.fromARGB(255, 0, 0, 0),
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -39,7 +57,7 @@ class MyApp extends StatelessWidget {
                 'MOBILE APP DEVELOPER',
                 style: TextStyle(
                   fontFamily: 'Pacifico',
-                  color: const Color.fromARGB(255, 223, 186, 178),
+                  color: const Color.fromARGB(255, 194, 51, 18),
                   fontSize: 12.0,
                   fontWeight: FontWeight.bold,
                 ),
