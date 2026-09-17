@@ -23,6 +23,9 @@ class MyApp extends StatelessWidget {
                 radius: 50.0,
                 backgroundImage: AssetImage('assets/images/profile.png'),
               ),
+
+              SizedBox(height: 10),
+
               Text(
                 'Samuel Abondejo',
                 style: TextStyle(
@@ -46,14 +49,27 @@ class MyApp extends StatelessWidget {
 
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 40.0),
-                child: TextField(
-                  decoration: InputDecoration(
-                    filled: true,
-                    fillColor: Colors.white,
-                    hintText: '08061517690',
-                    border: OutlineInputBorder(
+                child: SizedBox(
+                  child: Container(
+                    height: 40.0,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
                       borderRadius: BorderRadius.circular(10.0),
-                      borderSide: BorderSide.none,
+                    ),
+                    child: Row(
+                      children: [
+                        SizedBox(width: 15),
+                        Icon(Icons.phone, color: Colors.black),
+                        SizedBox(width: 10),
+                        Text(
+                          '08061517690',
+                          style: TextStyle(
+                            fontFamily: 'Pacifico',
+                            fontSize: 16.0,
+                            color: Colors.black,
+                          ),
+                        ),
+                      ],
                     ),
                   ),
                 ),
@@ -63,15 +79,26 @@ class MyApp extends StatelessWidget {
 
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 40.0),
-                child: TextField(
-                  decoration: InputDecoration(
-                    filled: true,
-                    fillColor: Colors.white,
-                    hintText: 'samuelsetemijp@gmail.com',
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(10.0),
-                      borderSide: BorderSide.none,
-                    ),
+                child: Container(
+                  height: 40.0,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(10.0),
+                  ),
+                  child: Row(
+                    children: [
+                      SizedBox(width: 15),
+                      Icon(Icons.email, color: Colors.black),
+                      SizedBox(width: 10),
+                      Text(
+                        'samuelsetemijp@gmail.com',
+                        style: TextStyle(
+                          fontFamily: 'Pacifico',
+                          fontSize: 16.0,
+                          color: Colors.black,
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ),
