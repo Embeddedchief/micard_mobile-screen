@@ -466,7 +466,7 @@ class _DeveloperBackgroundPainter extends CustomPainter {
     canvas.drawRRect(
       rect,
       Paint()
-        ..color = const Color(0xFF141414).withOpacity(0.88).clamp(0.0, 1.0),
+        ..color = const Color(0xFF141414).withOpacity((0.88).clamp(0.0, 1.0)),
     );
 
     _text(
